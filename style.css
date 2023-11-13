@@ -72,7 +72,7 @@
 }
 .button {
     border-radius: 40px;
-    background: var(--secondary-color);
+    background: var(--secondary-color) !important;
     color: white !important;
     padding: 14px 47px;
     text-decoration: none !important;
@@ -117,11 +117,14 @@
 }
 header {
     padding-bottom: 200px;
-    position: relative !important;
+    position: relative;
 }
 .portfolio-sec {
     position: absolute; 
-    margin-top: -6rem;
+    /* margin-top: -6rem; */
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 62%);
 }
 /* About us section  */
 .divider {
@@ -149,7 +152,43 @@ header {
 .carousel-control-next {
     right: -55px !important;
 }
+/* Form section */
+#form label, #fullName, #email, #phone, #project {
+    color:  #190527;
+    font-family: var(--chillax-font);
+    font-size: 41.571px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78.373px;
+    letter-spacing: -1.306px;
+}
+#form label {
+    display: inline !important;
+}
+#form input {
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(25, 5, 39, 0.20);
+    color: var(--secondary-color);
+}
+#form input::placeholder {
+    color: #89898A;
+    font-size: 35.632px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78.373px;
+    letter-spacing: -1.306px;
+}
+#form input:focus {
+    outline: none;
+}
+
 /* Media queries  */
+@media screen and (max-width:1700px) {
+    .portfolio-sec div img {
+        width: 25%;
+    }
+}
 @media screen and (max-width:991px) {
 .get-in-touch {
         position: unset !important;
