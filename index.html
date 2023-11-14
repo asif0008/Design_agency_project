@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid pt-4" style="background-image: url(/Images/bg-img.png);background-repeat: no-repeat;background-position: center; background-size: cover;">
+    <header class="container-fluid pt-4" style="background-image: url(/Images/bg-img.png);background-repeat: no-repeat;background-position: center; background-size: cover;" id="home">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
@@ -25,22 +25,22 @@
                   <div class="collapse navbar-collapse ms-0 ms-lg-5" id="navbarNavDropdown">
                     <ul class="navbar-nav mt-4 mt-lg-0  ">
                       <li class="nav-item">
-                        <a class="nav-link active text-center text-lg-left my-2 my-lg-0" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active text-center text-lg-left my-2 my-lg-0" aria-current="page" href="#home">HOME</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#">ABOUT US</a>
+                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#about">ABOUT US</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#">PORTFOLIO</a>
+                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#portfolio">PORTFOLIO</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#">TEAM</a>
+                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#team">TEAM</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#">TESTIMONIAL</a>
+                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#testimonial">TESTIMONIAL</a>
                       </li>
                       <li class="nav-item get-in-touch button">
-                        <a class="nav-link text-center text-white text-lg-left my-2 my-lg-0" href="#">Get in Touch</a>
+                        <a class="nav-link text-center text-white text-lg-left my-2 my-lg-0" href="#get-in-touch">Get in Touch</a>
                       </li>
                     </ul>
                   </div>
@@ -82,7 +82,7 @@
     </header>
 
   <!-- About us Section -->
-  <section class="container-fluid" style="background-image: url(/Images/bg-texture.png);padding-top: 16rem;background-repeat: no-repeat;background-position: center; background-size: cover;">
+  <section class="container-fluid" style="background-image: url(/Images/bg-texture.png);padding-top: 16rem;background-repeat: no-repeat;background-position: center; background-size: cover;" id="about">
     <section class="container">
       <div class="row">
         <div class="col-6 col-md-2">
@@ -180,7 +180,7 @@
   </section>
 
   <!-- Our work section -->
-  <section class="container-fluid py-5" style="background: #33114D;">
+  <section class="container-fluid py-5" style="background: #33114D;" id="portfolio">
     <section class="container py-5">
       <div class="row g-4">
         <div class="col-6 col-md-1">
@@ -269,7 +269,7 @@
   </section>
 
   <!-- Reviews section -->
-  <section class="container-fluid py-5" style="background: #33114D;">
+  <section class="container-fluid py-5" style="background: #33114D;" id="testimonial">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-3 d-flex align-items-start justify-content-between">
@@ -437,7 +437,7 @@
   </section>
 
   <!-- Our team section -->
-  <section class="container-fluid pt-5 px-0" style="background: #33114D;">
+  <section class="container-fluid pt-5 px-0" style="background: #33114D;" id="team">
     <section class="container pt-5 pb-3 px-2">
       <div class="row g-4">
         <div class="col-6 col-md-2">
@@ -498,6 +498,42 @@
       </div>
     </section>
   </section>
+
+  <!-- Footer section -->
+  <footer class="container-fluid py-5" style="background: #33114D;">
+    <section class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="footer-heading">Let’s Talk</h3>
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between mt-4" style="gap:0.5rem;">
+            <a class="navbar-brand" href="#">
+              <img src="/Images/logo.png" alt="logo">
+            </a>
+            <a href="#form"><button class="button" style="font-size:18px">Request A Quote</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="my-5" style="height: 1px; background: rgba(227, 199, 255, 0.20);"></div>
+      <div class="row">
+        <div class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
+          <div class="d-flex flex-column" style="gap: 0.5rem;">
+            <a class="heading-four" href="mailto:info@ewako.com">info@ewako.com</a>
+            <a class="heading-four" href="tel:+12342123321">+1 234 212 3321</a>
+          </div>
+          <div class="d-flex flex-column flex-md-row" style="gap: 2rem;">
+            <div class="d-flex flex-column justify-content-end">
+              <a class="heading-four" href="#">Behance</a>
+              <a class="heading-four" href="#">instagram</a>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+              <a class="heading-four" href="#">Drible</a>
+              <a class="heading-four" href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
     <!-- Script -->
     <script src="script.js"></script>
