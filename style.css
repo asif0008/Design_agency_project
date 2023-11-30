@@ -17,6 +17,9 @@
 a {
     text-decoration: none !important;
 }
+a:hover {
+    color: var(--secondary-color) !important;
+}
 /* custom css */
 .bg-color {
     background-color: var(--bg-color);
@@ -188,12 +191,14 @@ header {
 }
 #form input:-webkit-autofill{
     -webkit-text-fill-color: var(--secondary-color) !important;
+    background-color: transparent !important;
 }
 #form input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
 }
 /* Footer section */
 .footer-heading {
