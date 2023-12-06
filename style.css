@@ -14,6 +14,9 @@
     box-sizing: border-box;
     transition: all 0.8s ease !important;
 }
+body {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none !important;
 }
@@ -77,15 +80,15 @@ a:hover {
     line-height: 20.4px;
     letter-spacing: 0.468px;
 }
-.button {
+.button, .header-btn {
     border-radius: 40px;
     background: var(--secondary-color) !important;
     color: white !important;
-    padding: 14px 47px;
+    padding: 16px 20px;
     text-decoration: none !important;
     transition: all 1s ease;
 }
-.button:hover {
+.button:hover, .header-btn:hover {
     background-color: var(--primary-color) !important;
 }
 .button-i {
@@ -110,7 +113,7 @@ a:hover {
 .nav-link {
     color: #FFF;
     font-family: var(--open-font);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -214,10 +217,16 @@ input:-webkit-autofill:active {
 /* Media queries  */
 @media screen and (max-width:1700px) {
     .portfolio-sec div img {
-        width: 25%;
+        width: 20%;
     }
 }
 @media screen and (max-width:991px) {
+    .header-btn {
+        background: unset !important;
+    }
+    .header-btn a {
+        color: rgba(255,255,255,.55) !important;
+    }
     .get-in-touch {
         position: unset !important;
     }
@@ -231,6 +240,14 @@ input:-webkit-autofill:active {
   }
   }
   @media screen and (max-width:768px) {
+    .carousel-control-next {
+        right: 18%!important;
+        bottom: -16% !important;
+    }
+    .carousel-control-prev {
+        right: 33% !important;
+        bottom: -16% !important;
+    }
     .heading-one {
       font-size: 50px;
       line-height: 65px;
@@ -246,6 +263,10 @@ input:-webkit-autofill:active {
     .heading-four {
       font-size: 25px;
       line-height: 35.606px;
+  }
+  #form label, #fullName, #email, #phone, #project, #form input::placeholder {
+    font-size: 30px;
+    line-height: 55px;
   }
   }
   @media screen and (max-width:576px) {
