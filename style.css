@@ -240,6 +240,16 @@ input:-webkit-autofill:active {
   }
   }
   @media screen and (max-width:768px) {
+    .header-btn:hover {
+        background-color: unset !important;
+    }
+    .footer-heading {
+        font-size: 150px;
+        line-height: 180px;
+    }
+    .hero-img img {
+        width: 250px;
+    }
     .carousel-control-next {
         right: 18%!important;
         bottom: -16% !important;
@@ -270,6 +280,13 @@ input:-webkit-autofill:active {
   }
   }
   @media screen and (max-width:576px) {
+    #form label, #fullName, #email, #phone, #project, #form input::placeholder {
+        font-size: 25px;
+        line-height: 45px;
+      }
+    #form input {
+        width: 290px !important;
+    }
     .nav-link {
         font-size: 15px !important;
     }
@@ -289,10 +306,17 @@ input:-webkit-autofill:active {
       font-size: 20px;
       line-height: 25.606px;
   }
+  .footer-heading {
+    font-size: 110px;
+    line-height: 140px;
+  }
   }
   @media screen and (max-width:425px) {
-        .heading-one {
-      font-size: 35px;
+    #testimonial {
+        padding-bottom: 5rem !important;
+    }
+    .heading-one {
+      font-size: 32px;
       line-height: 45px;
     }
     .heading-two {
