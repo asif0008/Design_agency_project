@@ -25,22 +25,22 @@
                   <div class="collapse navbar-collapse ms-0 ms-lg-5" id="navbarNavDropdown">
                     <ul class="navbar-nav mt-4 mt-lg-0  ">
                       <li class="nav-item">
-                        <a class="nav-link active text-center text-lg-left my-2 my-lg-0" aria-current="page" href="#home">HOME</a>
+                        <a class="nav-link active text-center text-lg-start my-2 my-lg-0" aria-current="page" href="#home">HOME</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#about">ABOUT US</a>
+                        <a class="nav-link text-center text-lg-start my-2 my-lg-0" href="#about">ABOUT US</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#portfolio">PORTFOLIO</a>
+                        <a class="nav-link text-center text-lg-start my-2 my-lg-0" href="#portfolio">PORTFOLIO</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#team">TEAM</a>
+                        <a class="nav-link text-center text-lg-start my-2 my-lg-0" href="#team">TEAM</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-center text-lg-left my-2 my-lg-0" href="#testimonial">TESTIMONIAL</a>
+                        <a class="nav-link text-center text-lg-start my-2 my-lg-0" href="#testimonial">TESTIMONIAL</a>
                       </li>
                       <li class="nav-item get-in-touch header-btn">
-                        <a class="nav-link text-center text-white text-lg-left my-2 my-lg-0" href="#get-in-touch">Get in Touch</a>
+                        <a class="nav-link text-center text-white text-lg-start my-2 my-lg-0" href="#get-in-touch">Get in Touch</a>
                       </li>
                     </ul>
                   </div>
@@ -48,7 +48,7 @@
               </nav>
               <div class="row mt-5">
                 <div class="col-lg-8">
-                    <h1 class="heading-one text-center text-md-left">We Are <br>
+                    <h1 class="heading-one text-center text-md-start">We Are <br>
                          <span style="color:#FF7F0B;">Ewacko Design</span> <br>
                           Digital Agency
                     </h1>
@@ -72,7 +72,7 @@
               </div>
         </div>
         <div class="portfolio-sec w-100">
-          <div class="d-flex flex-wrap align-items-center justify-content-around gap-5">
+          <div class="d-flex flex-wrap align-items-center justify-content-around gap-3 gap-md-5">
               <img class="img-fluid" src="/Images/portfolio-one (1).png" alt="portfolio_image">
               <img class="img-fluid" src="/Images/portfolio-one (2).png" alt="portfolio_image">
               <img class="img-fluid" src="/Images/portfolio-one (3).png" alt="portfolio_image">
@@ -82,7 +82,7 @@
     </header>
 
   <!-- About us Section -->
-  <section class="container-fluid" style="background-image: url(/Images/bg-texture.png);padding-top: 16rem;background-repeat: no-repeat;background-position: center; background-size: cover;" id="about">
+  <section class="container-fluid about-section" style="background-image: url(/Images/bg-texture.png);padding-top: 16rem;background-repeat: no-repeat;background-position: center; background-size: cover;" id="about">
     <section class="container">
       <div class="row g-4">
         <div class="col-6 col-lg-2">
@@ -479,16 +479,16 @@
           </div>
           <form id="form" class="mt-5">
               <label for="fullName">Hello! My name is</label>
-              <input type="text" placeholder="Your full name" id="fullName">
+              <input type="text" placeholder="Your full name" id="fullName" name="fullName">
               
               <label for="email">and I want to discuss a potential project. You can email me at</label>
-              <input type="email" placeholder="your@email.com" id="email">
+              <input type="email" placeholder="your@email.com" id="email" name="email">
               
               <label for="phone">or reach me on</label>
-              <input type="tel" placeholder="your phone #" id="phone">
+              <input type="tel" placeholder="your phone #" id="phone" name="phone">
               
               <label for="project">Here are some details about my project:</label>
-              <input type="text" placeholder="My project is about" id="project">
+              <input type="text" placeholder="My project is about" id="project" name="project">
               <input class="button d-block mt-4" type="submit" value="Send" style="font-family: var(--chillax-font); font-size:1.5rem">
           </form>                    
         </div>

@@ -287,6 +287,12 @@ input:-webkit-autofill:active {
     #form input {
         width: 290px !important;
     }
+    .navbar-brand img {
+        width: 120px;
+    }
+    .about-section {
+        padding-top: 6rem !important;
+    }
     .nav-link {
         font-size: 15px !important;
     }
