@@ -213,8 +213,13 @@ input:-webkit-autofill:active {
     line-height: 290px; /* 24.259% */
     letter-spacing: -2.554px;
 }
-
 /* Media queries  */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1920px !important;
+    }
+}
+
 @media screen and (max-width:1700px) {
     .portfolio-sec div img {
         width: 20%;
@@ -278,14 +283,23 @@ input:-webkit-autofill:active {
     font-size: 30px;
     line-height: 55px;
   }
+  header {
+    padding-bottom: 100px;
+  }
+  .about-section {
+    padding-top: 9rem;
+  }
   }
   @media screen and (max-width:576px) {
     #form label, #fullName, #email, #phone, #project, #form input::placeholder {
         font-size: 25px;
         line-height: 45px;
       }
-    #form input {
+    #fullName, #email, #phone {
         width: 290px !important;
+    }
+    #project {
+        width: 100% !important;
     }
     .navbar-brand img {
         width: 120px;
@@ -303,6 +317,7 @@ input:-webkit-autofill:active {
     .heading-two {
       font-size: 30px;
       line-height: 38px;
+      text-align: center;
   }
     .heading-three {
       font-size: 25px;
@@ -315,6 +330,13 @@ input:-webkit-autofill:active {
   .footer-heading {
     font-size: 110px;
     line-height: 140px;
+  }
+  #form-btn {
+    width: 100% !important;
+    padding: 12px;
+  }
+  #testimonial {
+    padding-bottom: 4rem !important;
   }
   }
   @media screen and (max-width:425px) {
