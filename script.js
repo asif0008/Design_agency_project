@@ -33,3 +33,16 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     }
 })
 
+// Smooth scrolling
+
+(function () {
+    const locomotiveScroll = new LocomotiveScroll({
+        el: document.querySelector('.scrollContainer'),
+        smooth: true,
+        smoothMobile: true,
+        scrollFromAnywhere: true,
+        touchMultiplier: 2,
+        inertia: 0.1,
+        Multiplier: 1
+    });
+})();
